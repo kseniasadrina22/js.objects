@@ -40,3 +40,17 @@ console.log("customer2 :>>", customer2);
 
 const customer3 = customer;
 console.log("customer3 :>>", customer3);
+
+//Part 2
+const cat = {
+  name: "Murka",
+  color: "black",
+  isMale: false,
+  isFurnitureDemage: true,
+};
+console.log("cat :>>", cat);
+
+for (const key in cat) {
+  alert(key);
+  alert(cat[key]);
+}
