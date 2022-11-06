@@ -40,6 +40,10 @@ console.log("customer2 :>>", customer2);
 
 const customer3 = customer;
 console.log("customer3 :>>", customer3);
+//3)
+
+const customer4 = Object.assign({}, customer);
+console.log("customer4 :>>", customer4);
 
 //Part 2
 const cat = {
@@ -54,3 +58,18 @@ for (const key in cat) {
   alert(key);
   alert(cat[key]);
 }
+
+//Part 3
+
+function books() {
+  this.author = "Vasyl Simonenko";
+  this.nameBooks = "Poems";
+  this.numberPublication = "1964";
+  this.numberPrice = "250";
+  this.publistingHouse = {
+    nameHouse: "Young Life",
+    nameCity: "Kyiv",
+  };
+}
+
+console.log("books :>>", books);
