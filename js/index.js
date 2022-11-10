@@ -64,12 +64,13 @@ for (const key in cat) {
 function books() {
   this.author = "Vasyl Simonenko";
   this.nameBooks = "Poems";
-  this.numberPublication = "1964";
+  this.numberPublication = "2022";
   this.numberPrice = "250";
   this.publistingHouse = {
     nameHouse: "Young Life",
     nameCity: "Kyiv",
   };
 }
-
+//books.this.numberPrice = "300";
 console.log("books :>>", books);
+books.numberPrice = "300";
